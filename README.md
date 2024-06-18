@@ -1,4 +1,6 @@
 # Mastering .NET 8: Unlock the Power of Enhanced Data Annotations for Superior Data Validation and Clean Code🔥
+![data annotation](https://github.com/Netcode-Hub/DemoDataAnnotationInDotNet8/assets/110794348/ca840520-457a-4197-932e-ee4f67cae86e)
+
 # What do these annotations do?
 1. AllowedValues: This annotation restricts the values that can be assigned to the Categories property. Only the specified values "Electronics," "Books," "Sneakers," and "Appliances" are allowed. This ensures that the category of a product is always valid.
 
