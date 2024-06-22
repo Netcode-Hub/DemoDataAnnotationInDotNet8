@@ -12,6 +12,23 @@
 
 By leveraging these annotations, you can add robust validation rules directly to your data models, making your code more reliable and easier to maintain. These features in .NET 8 represent a significant step forward in simplifying data validation and ensuring your applications behave as expected.
 
+# Exmple
+      public class Product
+          {
+              public string? Description { get; set; }
+      
+              [AllowedValues("Electronics", "Books", "Sneakers", "Appliances")]
+              public string? Categories { get; set; }
+        
+              [Range(1, 100, MinimumIsExclusive = true, MaximumIsExclusive = true)]
+              public int Quantity { get; set; }
+      
+              [DeniedValues("Product", "Category")]
+              public string? Tag { get; set; }
+      
+              [Length(2, 4)]
+              public List<string>? Location { get; set; }
+          }
 # Here's a follow-up section to encourage engagement and support for Netcode-Hub:
 🌟 Get in touch with Netcode-Hub! 📫
 1. GitHub: [Explore Repositories](https://github.com/Netcode-Hub/Netcode-Hub) 🌐
